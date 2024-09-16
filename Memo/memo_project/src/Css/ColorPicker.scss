@@ -1,0 +1,29 @@
+@import 'MyComponent';
+
+.color-picker-container {
+    display: flex;
+    position: relative;
+    width: 10rem;
+    height: 5vh;
+    align-items: center;
+    margin-left: 5vh;
+
+    .bg-change-btn {
+        background-color: $bg_color;
+        font-size: 4vh;
+        border: none;
+        border-radius: 15px;
+        width: 9em;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .color-input {
+        font-size: 4vh;
+        width: 9em;
+        position: absolute;
+        opacity: 0;
+        height: 10vh;
+        cursor: pointer;
+    }
+}

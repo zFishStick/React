@@ -1,0 +1,205 @@
+
+$bg_color: #833625;
+$txt_color: black;
+$note_color: #c9c90b;
+
+html, body {
+    background-color: $bg_color;
+    height: 100%;
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+    
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: darken($color: $bg_color, $amount: 5);
+        }
+    
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: darken($color: $bg_color, $amount: 10);
+        }
+    
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: darken($color: $bg_color, $amount: 15);
+            cursor: pointer;
+        }
+}
+
+.upper-bar {
+    background-color: darken($color: $bg_color, $amount: 10);
+    min-height: 15vh;
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $txt_color;
+        font-size: 4rem;
+    }
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    margin-top: 0 !important;
+    padding-top: 5vh;
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: darken($color: $note_color, $amount: 5);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: darken($color: $note_color, $amount: 10);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: darken($color: $note_color, $amount: 10);
+        cursor: pointer;
+    }
+
+    .post-it-area{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .post-it-title {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .post-it {
+        width: 35vh;
+        height: 35vh;
+        background-color: $note_color;
+        margin: 0px 20px 20px 20px;
+        position: relative;
+
+        .post-it-title{
+            outline: none;
+            font-size: 5vh;
+            background-color: $note_color;
+            border: none;
+            text-align: center;
+            font-weight: bold;
+            width: inherit;
+            padding: 5px 0 0 0;
+        }
+
+        .post-it-content {
+            background-color: $note_color;
+            border: none;
+            color: $txt_color;
+            height: 10em;
+            outline: none;
+            resize: none;
+            font-size: 2.5vh;
+        }
+
+        .delete-btn{
+            position: absolute;
+            margin: 0;
+            right: 5px;
+            top: 5px;
+            background-color: darken($color: $note_color, $amount: 5);
+            border: none;
+            border-radius: 5px;
+            font-size: 3vh;
+            cursor: pointer;
+        }
+    }
+
+    .add-container{
+        display: flex;
+        width: 35vh;
+        height: 35vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .add-post-it {
+        display: flex;
+        width: 15vh;
+        height: 15vh;
+        border-radius: 100px;
+        background-color: darken($bg_color, 10%);
+        align-items: center;
+        justify-content: center;
+
+        .add-btn {
+            padding: 0;
+            position: relative;
+            transition: transform 0.2s;
+            border: none;
+            background-color: transparent;
+
+            &:hover {
+                transition: transform 0.5s;
+                transform: scale(1.05);
+            }
+
+            .icon{
+                width: 60px;
+                height: 60px; 
+            }
+
+        }
+    }
+
+
+}
+
+.lower-bar {
+    background-color: darken($color: $bg_color, $amount: 10);
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,175 @@
+html, body {
+  background-color: #833625;
+  height: 100%;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-track, body ::-webkit-scrollbar-track {
+  background: #6f2e1f;
+}
+html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+  background: #5b261a;
+}
+html ::-webkit-scrollbar-thumb:hover, body ::-webkit-scrollbar-thumb:hover {
+  background: #471d14;
+  cursor: pointer;
+}
+
+.upper-bar {
+  background-color: #5b261a;
+  min-height: 15vh;
+}
+.upper-bar .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  font-size: 4rem;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  margin-top: 0 !important;
+  padding-top: 5vh;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.container ::-webkit-scrollbar {
+  width: 10px;
+}
+.container ::-webkit-scrollbar-track {
+  background: #b1b10a;
+}
+.container ::-webkit-scrollbar-thumb {
+  background: #999908;
+}
+.container ::-webkit-scrollbar-thumb:hover {
+  background: #999908;
+  cursor: pointer;
+}
+.container .post-it-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .post-it-title {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.container .post-it {
+  width: 35vh;
+  height: 35vh;
+  background-color: #c9c90b;
+  margin: 0px 20px 20px 20px;
+  position: relative;
+}
+.container .post-it .post-it-title {
+  outline: none;
+  font-size: 5vh;
+  background-color: #c9c90b;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  width: inherit;
+  padding: 5px 0 0 0;
+}
+.container .post-it .post-it-content {
+  background-color: #c9c90b;
+  border: none;
+  color: black;
+  height: 10em;
+  outline: none;
+  resize: none;
+  font-size: 2.5vh;
+}
+.container .post-it .delete-btn {
+  position: absolute;
+  margin: 0;
+  right: 5px;
+  top: 5px;
+  background-color: #b1b10a;
+  border: none;
+  border-radius: 5px;
+  font-size: 3vh;
+  cursor: pointer;
+}
+.container .add-container {
+  display: flex;
+  width: 35vh;
+  height: 35vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px 20px 20px;
+}
+.container .add-post-it {
+  display: flex;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 100px;
+  background-color: #5b261a;
+  align-items: center;
+  justify-content: center;
+}
+.container .add-post-it .add-btn {
+  padding: 0;
+  position: relative;
+  transition: transform 0.2s;
+  border: none;
+  background-color: transparent;
+}
+.container .add-post-it .add-btn:hover {
+  transition: transform 0.5s;
+  transform: scale(1.05);
+}
+.container .add-post-it .add-btn .icon {
+  width: 60px;
+  height: 60px;
+}
+
+.lower-bar {
+  background-color: #5b261a;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=MyComponent.css.map */
